@@ -1,0 +1,6 @@
+*.decl.h
+*.def.h
+charmrun
+*.a
+*.o
+weighted_htram_smp

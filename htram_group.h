@@ -187,7 +187,7 @@ class HTram : public CBase_HTram {
     void getTotSendCount(int);
     void getTotRecvCount(int);
     void getTotTramHCount(int);
-    bool idleFlush();
+    bool idleFlush(double);
     void avgLatency(CkCallback cb);
 //#ifdef SRC_GROUPING
     void receivePerPE(HTramMessage *);

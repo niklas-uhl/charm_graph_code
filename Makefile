@@ -1,6 +1,8 @@
 # Change Charm build locations based on where the charm build is
-CHARMC =/ccs/home/rrao/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-gcc/bin/charmc $(OPTS)
-CHARMC_SMP =/work/hdd/mzu/rao1/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-smp-gcc/bin/charmc $(OPTS)
+#CHARMC =/ccs/home/rrao/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-gcc/bin/charmc $(OPTS)
+CHARMC=charmc $(OPTS)
+CHARMC_SMP=charmc $(OPTS)
+#CHARMC_SMP =/work/hdd/mzu/rao1/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-smp-gcc/bin/charmc $(OPTS)
 # delta: /work/hdd/rao1/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-smp-gcc/bin/charmc
 # frontier: /ccs/home/rrao/charm/ofi-linux-x86_64-cxi-slurmpmi2cray-smp-gcc/bin/charmc
 # local: /Users/ritvik/charm/netlrts-darwin-x86_64-smp/bin/charmc

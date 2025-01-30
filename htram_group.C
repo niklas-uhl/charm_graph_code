@@ -125,7 +125,7 @@ HTram::HTram(CkGroupID recv_ngid, CkGroupID src_ngid, int buffer_size, bool enab
   contribute(start_cb);
 }
 
-bool HTram::idleFlush() {
+bool HTram::idleFlush(double) {
 //    if(thisIndex==0) CkPrintf("\nCalling idleflush");
 #ifdef IDLE_FLUSH
     tflush(true);
