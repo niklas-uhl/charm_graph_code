@@ -34,7 +34,7 @@ mainmodule weighted_htram_smp
   {
     entry SsspChares(CProxy_HTram htram);
     entry void initiate_pointers();
-    entry [whenidle] bool idle_triggered();
+    entry [whenidle] bool idle_triggered(double);
     entry void generate_2d_graph(long partition[dividers], int dividers);
     entry void generate_local_graph(long _num_vertices, long _num_edges, long partition[dividers], int dividers);
     entry void get_graph(LongEdge edges[E], long E, long partition[dividers], int dividers); //gets graph partition

@@ -838,7 +838,7 @@ public:
 		#endif
 	}
 
-	bool idle_triggered()
+	bool idle_triggered(double)
 	{
 		process_heap();
 		return true;
@@ -882,7 +882,7 @@ public:
 		bfs_hold = new std::vector<Update>[histo_bucket_count];
 		info_array = new long[histo_reduction_width+7];
 		bucket_multiplier = histo_bucket_count / (histo_bucket_count * log(V));
-		CkCallWhenIdle(CkIndex_SsspChares::idle_triggered(), this);
+		CkCallWhenIdle(CkIndex_SsspChares::idle_triggered(0), this);
 	}
 
 	void generate_2d_graph(long *partition, int dividers)
